@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.corpo{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 70%;
+    background-color: gray;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: flex-start;
+
+
+}
+
+.tela{
+    display: flex;
+    justify-content: center;
+    background-color: darkblue;
+    width: 65%;
+    height: 200px;
+    border-radius: 1000em 1000em 0 0;
+    margin-top: 40px;
+    transform:scaleX(110%)
+
+}
+.objeto{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+.teclas{
+    display: flex;
+    width: 70%;
+    height: 100px;
+    /* border: 1px solid red;   */
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+    border: 2px solid black;
+    background-color: whitesmoke;
+}
+.sol{
+    background-color: yellow;
+
+}
+.lua{
+    background-color: white;
+}
