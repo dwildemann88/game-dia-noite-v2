@@ -9,12 +9,13 @@ botoes.forEach(botao => {
         
         let valor = botao.value;
         objeto.classList.remove("sol", "lua");
+        tela.classList.remove("dia", "noite");
         if(valor==="lua"){
             objeto.classList.add("lua")
-            objeto.classList.add("lua")
+            tela.classList.add("noite")
         }else{
             objeto.classList.add("sol")
-            .classList.add("sol")
+            tela.classList.add("dia")
         }
     });
 });
