@@ -20,8 +20,8 @@ section{
 .corpo{
     display: flex;
     flex-direction: column;
-    width: 45%;
-    height: 70%;
+    width: 600px;
+    height: 600px;
     background-color: gray;
     border-radius: 50%;
     align-items: center;
@@ -38,24 +38,35 @@ section{
     height: 200px;
     border-radius: 1000em 1000em 0 0;
     margin-top: 40px;
-    transform:scaleX(110%)
+    transform:scaleX(120%);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    overflow: hidden;
 
 }
 .objeto{
     display: flex;
-    width: 100px;
+    width: 80px;
     height: 100px;
     background-color: gray;
     border-radius: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.grama{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    background-image: url(img/grama.png);
+    background-size: cover;
 }
 .teclas{
     display: flex;
     width: 200px;
     height: 200px;
-    border: 2px solid rgb(0, 0, 0);
     background-color: rgb(61, 135, 161);
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 30px 10px rgba(0, 0, 0, 0.2), 0 0 10px 2px rgb(42, 97, 119);
     margin-top: 50px;
     align-items: center;
     justify-content: center;
@@ -71,16 +82,19 @@ section{
     border: none;
     background-color: rgb(84, 179, 216);
     border-radius: 100%;
-    box-shadow: inset -2px -2px 2px 2px rgb(44, 94, 114),0px 0px 10px rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 7px 3px rgb(51, 119, 146),5px 5px 7px 2px rgb(41, 93, 117);
     
 
 }
 .botao:focus{
-    box-shadow: inset -0px -0px 0px 0px rgb(44, 94, 114),0px 0px 10px rgb(0, 0, 0);
+    box-shadow: inset -0px -0px 6px 1px rgb(44, 94, 114),0px 0px 10px rgb(29, 61, 90);
     background-color: rgb(72, 152, 184);
     transition: 0.1s ease-in-out;
-    transform: translateX(2px);
-    transform: translateY(2px);
+    transform: translateX(5px);
+    transform: translateY(5px);
+}
+.botao:focus > .bi{
+    color: rgb(35, 80, 105);
 }
 .sol{
     background-color: yellow;
@@ -94,4 +108,9 @@ section{
 }
 .dia{
     background-color: cyan;
+}
+.bi{
+    transform: scale(1.8);
+    color: white;
+    transition: 0.2s ease-in-out;
 }
