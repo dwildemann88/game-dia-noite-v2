@@ -8,14 +8,16 @@ botoes.forEach(botao => {
     botao.addEventListener("click", () => {
         
         let valor = botao.value;
-        objeto.classList.remove("sol", "lua");
+        objeto.classList.remove("sol", "lua","animacao");
+        objeto.style.
         tela.classList.remove("dia", "noite");
+
         if(valor==="lua"){
-            objeto.classList.add("lua")
+            objeto.classList.add("lua","animacao")
             tela.classList.add("noite")
             grama.style.filter='brightness(0.7)'
         }else{
-            objeto.classList.add("sol")
+            objeto.classList.add("sol","animacao")
             tela.classList.add("dia")
             grama.style.filter='brightness(1.2)'
         }
