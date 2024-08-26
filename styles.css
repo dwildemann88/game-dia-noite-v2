@@ -9,6 +9,7 @@ section{
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-color: rgb(31, 31, 31);
 }
 .conteiner{
     display: flex;
@@ -43,12 +44,13 @@ section{
     align-items: center;
     gap: 20px; 
     overflow: hidden;
+    
 
 }
 .objeto{
     display: flex;
-    width: 80px;
-    height: 100px;
+    width: 100px;
+    height: 110px;
     background-color: gray;
     border-radius: 100%;
     margin-top: 20px;
@@ -97,17 +99,30 @@ section{
     color: rgb(35, 80, 105);
 }
 .sol{
-    background-color: yellow;
+    background: url(/img/sol.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.8);
 
 }
 .lua{
-    background-color: white;
+    background: url(/img/lua.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(1.1);
 }
 .noite{
-    background-color: darkblue;
+    box-shadow: inset 0px 0px 30px 5px rgb(0, 0, 0);
+    background: url(/img/ceu-noite.jpg);
+    background-size: cover;
 }
 .dia{
-    background-color: cyan;
+    box-shadow: inset 0px 0px 20px 10px rgb(51, 151, 209);
+    background: url(/img/ceu-dia.jpg);
+    background-size: cover;
+    filter: brightness(1.1);
 }
 .bi{
     transform: scale(1.8);

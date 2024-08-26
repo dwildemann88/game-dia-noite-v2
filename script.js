@@ -3,7 +3,7 @@ let sol = document.getElementsByClassName("sol")
 let lua = document.getElementsByClassName("noite")
 let botoes = document.querySelectorAll(".botao");
 let tela= document.querySelector(".tela")
-
+let grama = document.querySelector(".grama")
 botoes.forEach(botao => {
     botao.addEventListener("click", () => {
         
@@ -13,9 +13,11 @@ botoes.forEach(botao => {
         if(valor==="lua"){
             objeto.classList.add("lua")
             tela.classList.add("noite")
+            grama.style.filter='brightness(0.7)'
         }else{
             objeto.classList.add("sol")
             tela.classList.add("dia")
+            grama.style.filter='brightness(1.2)'
         }
     });
 });
