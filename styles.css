@@ -18,17 +18,29 @@ section{
     align-items: center;
     justify-content: center;
 }
+.borda-corpo{
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    height: 620px;
+    background-color: rgb(32, 42, 46);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 10px -10px 40px 0px rgb(17, 22, 24), -20px 20px 50px 10px rgb(8, 8, 8);
+
+}
 .corpo{
     display: flex;
     flex-direction: column;
     width: 600px;
     height: 600px;
-    background-color: rgb(75, 75, 75);
+    background-color: rgb(32, 42, 46);
     border-radius: 50%;
     align-items: center;
     justify-content: flex-start;
-    box-shadow: inset 0px 0px 50px 10px rgb(44, 44, 44), 0px 0px 50px 10px rgb(47, 47, 47);
-    border: 5px solid rgb(24, 24, 24) ;
+    box-shadow:  1px -1px 0px 0px rgb(55, 72, 78), inset -5px 5px 0px 0px rgb(28, 35, 39), inset 1px -1px 0px 0px rgb(55, 72, 78),-10px 10px 10px 0px rgb(17, 22, 24)  ;
+    border: 10px solid rgb(32, 42, 46) ;
 }
 
 .tela{
@@ -66,8 +78,8 @@ section{
     display: flex;
     width: 200px;
     height: 200px;
-    background-color: rgb(61, 135, 161);
-    box-shadow: inset 0 0 30px 10px rgba(0, 0, 0, 0.2), 0 0 10px 2px rgb(42, 97, 119);
+    background-color: rgb(32, 42, 46);
+    box-shadow: inset 0 0 30px -10px rgb(55, 72, 78), -10px 10px 20px 0px rgb(8, 8, 8) ;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
@@ -81,21 +93,20 @@ section{
     width: 50px;
     height: 50px;
     border: none;
-    background-color: rgb(84, 179, 216);
+    background-color: transparent;
     border-radius: 100%;
-    box-shadow: inset 0px 0px 7px 3px rgb(51, 119, 146),5px 5px 7px 2px rgb(41, 93, 117);
+
     
 
 }
 .botao:focus{
-    box-shadow: inset -0px -0px 6px 1px rgb(44, 94, 114),0px 0px 10px rgb(29, 61, 90);
-    background-color: rgb(72, 152, 184);
+
     transition: 0.1s ease-in-out;
     transform: translateX(5px);
     transform: translateY(5px);
 }
 .botao:focus > .bi{
-    color: rgb(35, 80, 105);
+    color: rgb(75, 206, 230);
 }
 .sol{
     background: url(/img/sol.png);
