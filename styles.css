@@ -221,9 +221,14 @@ section{
     /* border: 1px solid red; */
     align-items: flex-start;
     justify-content: space-around;
-    width: 100%;
+    width: 80%;
     gap: 50px;
-    height: 60%;
+    height: 45%;
+    border-radius:  50em 50em 1000em 1000em;
+    overflow: hidden;
+    padding: 20px 20px 0px 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset -1px 1px 1px 0px white;
 }
 .ligar{
     display: flex;
@@ -255,22 +260,22 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.5px solid gray;
-    background-color: transparent;
+    border: none;
+    background-color: rgb(32, 42, 46);
     cursor: pointer;
     box-shadow: inset 0px 0px 2px 0px gray, -1px 1px 5px 0px rgb(53, 53, 53), 3px -3px 3px 0px whitesmoke;
     transition: 0.2s ease-in-out;
 }
 .active-power{
     /* transform: rotate(360deg); */
-    border: 0.5px solid white;
-    box-shadow: 0px 0px 10px 0px aqua, inset 0px 0px 10px 0px aqua;
+    border:none;
+    box-shadow: 0px 0px 10px 0px rgb(32, 42, 46), inset 0px 0px 10px 0px rgb(32, 42, 46);
     transition: 0.2s ease-in-out;
     transform: scale(0.9);
 }
 .power{
     display: flex;
-    color: black;
+    color: white;
     transform: scale(1.5);
     /* border: 1px solid red; */
    align-items: center;
@@ -278,15 +283,12 @@ section{
    width: 50%;
 }
 .botao-ligar.active-power .power {
-    color: aqua; /* Altere a cor do ícone para aqua */
+    color: rgb(255, 255, 255); /* Altere a cor do ícone para aqua */
 }
 .botao.active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.2);
     transition: 0.5s;
-    color: aqua;
 }
-.botao.active>.bi{
-    color: aqua;
-}
+

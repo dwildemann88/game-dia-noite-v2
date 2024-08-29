@@ -56,7 +56,7 @@ function handleBotaoClick(event) {
 
         // Aplica a cor aqua apenas ao ícone associado ao botão ativo
         if (botao.querySelector(`.icon`) === icon) {
-            icon.style.color = "aqua";
+            icon.style.color = "rgb(123, 182, 207)";
         }
     });
 }
