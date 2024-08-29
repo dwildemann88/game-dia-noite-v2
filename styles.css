@@ -87,6 +87,7 @@ section{
     border-radius: 100%;
     position: relative;
     transition: transform 0.5s ease;
+    margin-left: 10px;
 }
 
 .botao {
@@ -221,4 +222,39 @@ section{
         transform: translateX(-200px);
     }
     
+}
+
+.ligar{
+    display: flex;
+    height: 170px;
+    width: 150px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    border-radius: 10% 10% 10% 70%;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+.ligar-dentro{
+    display: flex;
+    height: 160px;
+    width: 140px;
+    /* border: 1px solid red; */
+    position: absolute;
+    border-radius: 10% 10% 10% 70%;
+    /* border: 1px solid gray; */
+    box-shadow: inset 0px 0px 5px 0px rgb(55, 72, 78), 2px -2px 2px 0px rgb(134, 134, 134);
+    align-items: center;
+    justify-content: center;
+}
+.botao-ligar{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+.bi-power{
+    color: black;
+    transform: scale(1.2);
 }
