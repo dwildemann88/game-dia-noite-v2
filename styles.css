@@ -38,7 +38,7 @@ section{
     background-color: rgb(32, 42, 46);
     border-radius: 50%;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
     box-shadow:  1px -1px 0px 0px rgb(55, 72, 78), inset -5px 5px 0px 0px rgb(28, 35, 39), inset 1px -1px 0px 0px rgb(55, 72, 78),-10px 10px 10px 0px rgb(17, 22, 24)  ;
     border: 10px solid rgb(32, 42, 46) ;
@@ -311,7 +311,7 @@ section{
     height: 80%;
     border-radius:  0px 50em  1000em 0px;
     margin-left: 2px;
-    background-color: beige;
+    background-color: white;
     box-shadow: inset 10px 0px 20px 0px rgb(200, 200, 200);
     justify-content: start;
     align-items: center;
