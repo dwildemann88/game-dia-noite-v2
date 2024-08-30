@@ -9,22 +9,20 @@ const grama = document.querySelector(".grama");
 const nuvem = document.querySelector(".nuvem");
 const nuvem2 = document.querySelector(".nuvem2");
 const objeto = document.querySelector(".objeto");
-const icones = document.querySelectorAll(".icon")
+const icones = document.querySelectorAll(".icon");
+const barra = document.querySelector(".barra"); // Seleção da barra
+
 // Função para ativar/desativar os botões de ação
 function toggleActionButtons(enabled) {
     botoes.forEach(botao => {
         if (enabled) {
             botao.addEventListener("click", handleBotaoClick);
-            
-            
         } else {
             botao.removeEventListener("click", handleBotaoClick);
-            
         }
     });
     icones.forEach(icon => {
         icon.style.color = enabled ? "white" : "gray";
-
     });
 }
 
@@ -33,7 +31,6 @@ function handleBotaoClick(event) {
     const botao = event.currentTarget;
     const valor = botao.getAttribute("value");
     classRemove();
-    
     setTimeout(removeAnimation, 1000);
 
     if (valor === "lua") {
@@ -53,7 +50,6 @@ function handleBotaoClick(event) {
     icones.forEach(icon => {
         // Remove a cor aqua de todos os ícones
         icon.style.color = "white";
-
         // Aplica a cor aqua apenas ao ícone associado ao botão ativo
         if (botao.querySelector(`.icon`) === icon) {
             icon.style.color = "rgb(123, 182, 207)";
@@ -69,8 +65,13 @@ function togglePower() {
 
     // Habilita ou desabilita os botões de ação
     toggleActionButtons(isPowerOn);
-}
 
+    if (isPowerOn) {
+        adicionarBarrasComDelay(); // Adiciona barras com delay quando o botão está ativado
+    } else {
+        removeTodasBarras(); // Remove barras se o botão estiver desligado
+    }
+}
 
 // Função que é chamada quando a página é carregada
 function onloadSun() {
@@ -116,3 +117,31 @@ function classRemove() {
 
 // Adiciona o evento de clique no botão de ligar
 power.addEventListener("click", togglePower);
+
+// Função para adicionar barras com delay
+function adicionarBarrasComDelay() {
+    let count = 0;
+    const maxCount = 4;
+    const interval = 1000; // 1 segundo
+
+    const intervalId = setInterval(() => {
+        if (count < maxCount) {
+            addBarra();
+            count++;
+        } else {
+            clearInterval(intervalId);
+        }
+    }, interval);
+}
+
+// Função para adicionar uma barra
+function addBarra() {
+    let preenche = document.createElement("div");
+    barra.appendChild(preenche);
+    preenche.classList.add("barrinha");
+}
+
+// Função para remover todas as barras
+function removeTodasBarras() {
+    barra.innerHTML = ''; // Remove todas as barras
+}
