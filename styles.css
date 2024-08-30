@@ -115,6 +115,8 @@ section{
 .botao:nth-child(4) { top: 50%; left: 20%; transform: translate(-50%, -50%); }
 .botao:nth-child(5) { top: 30%; left: 70%; transform: translate(-50%, -50%); }
 .botao:nth-child(6) { top: 70%; left: 70%; transform: translate(-50%, -50%); }
+.botao:nth-child(7) { top: 30%; left: 30%; transform: translate(-50%, -50%); }
+.botao:nth-child(8) { top: 70%; left: 30%; transform: translate(-50%, -50%); }
 
 
 .icon{
@@ -216,46 +218,55 @@ section{
     }
     
 }
+.meio{
+    display: flex;
+    height: 50%;
+    width: 80%;
+    /* border: 1px solid red; */
+}
 .reparticao{
     display: flex;
     /* border: 1px solid red; */
     align-items: flex-start;
     justify-content: space-around;
-    width: 80%;
-    gap: 50px;
-    height: 45%;
-    border-radius:  50em 50em 1000em 1000em;
+    width: 60%;
+    gap: 30px;
+    height: 80%;
+    border-radius:  50em 0px 0px 500em;
     overflow: hidden;
     padding: 20px 20px 0px 10px;
     background-color: rgb(255, 255, 255);
     box-shadow: inset -1px 1px 1px 0px white;
+    
 }
 .ligar{
     display: flex;
     /* height: 170px; */
     height: 100%;
-    width: 150px;
+    width: 80px;
     /* border: 1px solid red; */
-    border-radius: 10% 10% 0% 0%;
-    background: white;
+    border-radius: 50px 50px 0px 0px;
+    background: rgb(32, 42, 46);
     justify-content: center;
     align-items: flex-start;
-    padding: 10px;
+    padding: 20px;
 }
 .ligar-dentro{
     display: flex;
-    height: 160px;
-    width: 140px;
+    height: 170px;
+    width: 50px;
     /* border: 1px solid red; */
-    border-radius: 10% 10% 10% 70%;
+    border-radius: 20px 20px 0px 0px;
+    background-color: whitesmoke;
     /* border: 1px solid gray; */
     box-shadow: inset 0px 0px 5px 0px rgb(55, 72, 78), 2px -2px 2px 0px rgb(134, 134, 134);
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 .botao-ligar{
-    width: 50px;
-    height: 50px;
+    margin-top: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 20%;
     display: flex;
     align-items: center;
@@ -276,7 +287,7 @@ section{
 .power{
     display: flex;
     color: white;
-    transform: scale(1.5);
+    transform: scale(0.8);
     /* border: 1px solid red; */
    align-items: center;
    justify-content: center;
@@ -292,3 +303,41 @@ section{
     transition: 0.5s;
 }
 
+.reparticao2{
+    display: flex;
+    flex-direction: column;
+    /* height: 170px; */
+    width: 40%;
+    height: 80%;
+    border-radius:  0px 50em  1000em 0px;
+    margin-left: 2px;
+    background-color: beige;
+    box-shadow: inset 10px 0px 20px 0px rgb(200, 200, 200);
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+.barra{
+    width: 100px;
+    height: 5px;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    background-color: rgb(32, 42, 46);
+}
+.temperatura{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    /* border: 1px solid red; */
+    background: rgb(32, 42, 46);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px 0px black, 1px -1px 5px 0px rgb(12, 12, 12);
+}
+.temp-text{
+    font-family: "Handjet", sans-serif;
+    color: greenyellow;
+    text-shadow: greenyellow 0em 0em 1em;
+}
